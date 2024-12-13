@@ -1,0 +1,12 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body, html, #root, input, textarea, button {
+    font-family: 'Host Grotesk', sans-serif;
+}
+
+button.rerendered {
+    background-color: red;
+}

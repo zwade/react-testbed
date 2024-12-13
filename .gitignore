@@ -1,0 +1,6 @@
+.vscode
+.yarn/
+!.yarn/sdks/
+dist
+*.swp
+node_modules
