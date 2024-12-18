@@ -1,0 +1,48 @@
+.root {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    height: 100%;
+
+    .pricings {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        justify-content: space-around;
+
+        .pricing-element {
+            flex-basis: 16rem;
+
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            background: #D8D8D8;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            align-items: center;
+
+            .title {
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+
+            .description {
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+        }
+    }
+}
+
+.parent {
+    .outer {
+        font-size: 24px;
+
+    }
+}
+
+.inner:focus-within {
+    background-color: red;
+}

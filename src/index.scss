@@ -10,3 +10,7 @@ body, html, #root, input, textarea, button {
 button.rerendered {
     background-color: red;
 }
+
+#root {
+    min-height: 100vh;
+}

@@ -1,0 +1,13 @@
+$var: 3px;
+
+.dropdown-input {
+    border: $var solid red;
+
+    .inner-text {
+        font-family: sans-serif;
+    }
+}
+
+.header {
+    font-size: 400px;
+}

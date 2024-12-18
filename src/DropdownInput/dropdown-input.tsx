@@ -1,3 +1,5 @@
+import "./dropdown-input.scss";
+
 export type Option<T extends string> = { value: T, name: string }
 
 export interface Props<T extends string> {
@@ -8,7 +10,7 @@ export interface Props<T extends string> {
 
 export const DropdownInput = <T extends string>(props: Props<T>) => {
     return (
-        <select value={props.value} onChange={(e) => props.onChange(e.target.value as T)}>
+        <select className={"dropdown-input"} value={props.value} onChange={(e) => props.onChange(e.target.value as T)}>
             {
                 props.options.map((opt) => (
                     <option
