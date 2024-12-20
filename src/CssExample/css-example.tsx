@@ -65,14 +65,65 @@ export const CssStyleExample = () => {
                     <div>One</div>
                     <div>Two</div>
                     <div>Three</div>
-                    <input className="inner" />
+                    <input />
                 </div>
 
                 <div className="inner inner-2">
                     This is the second inner style
                 </div>
-
             </div>
+        </div>
+    )
+}
+
+const CssGridSingle = () => {
+    return (
+        <div className="grid-example">
+            <div className="profile-pic">ZW</div>
+            <div className="name">Zach Wade</div>
+            <div className="phone">5719267316</div>
+            <div className="email">zacharywade@gmail.com</div>
+            <div className="actions">⡇</div>
+        </div>
+    )
+}
+
+export const CssGridExample = () => {
+    return (
+        <div className="grid-list">
+            <CssGridSingle />
+            <CssGridSingle />
+            <CssGridSingle />
+        </div>
+    )
+};
+
+const CssTableRow = () => {
+    return (
+        <div className="row">
+            <div>1337</div>
+            <div>Zach Wade</div>
+            <div>571xxxxxxx</div>
+            <div>zacharywade@gmail.com</div>
+            <div><button>Actions</button></div>
+        </div>
+    )
+}
+
+export const CssTableExample = () => {
+    return (
+        <div className="table">
+            <div className="row header">
+                <div>ID</div>
+                <div>Name</div>
+                <div>Phone</div>
+                <div>Email</div>
+            </div>
+
+            <CssTableRow />
+            <CssTableRow />
+            <CssTableRow />
+            <CssTableRow />
         </div>
     )
 }
